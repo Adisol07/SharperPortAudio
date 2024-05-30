@@ -22,11 +22,28 @@ public class Device
 
     public double DefaultSampleRate => info.defaultSampleRate;
 
-    public static Device DefaultInputDevice => new Device(PortAudio.DefaultInputDevice);
-    public static Device DefaultOutputDevice => new Device(PortAudio.DefaultOutputDevice);
+    public static Device DefaultInputDevice => new Device(DeviceType.DefaultInput);
+    [Obsolete("This structure is not yet implemented")]
+    public static Device DefaultOutputDevice => new Device(DeviceType.DefaultOutput);
 
+    public Device(DeviceType type)
+    {
+        PortAudio.Initialize();
+
+        switch (type)
+        {
+            case DeviceType.DefaultInput:
+                ID = PortAudio.DefaultInputDevice;
+                info = PortAudio.GetDeviceInfo(ID);
+                break;
+            default:
+                throw new Exception("Device of this type does not have implementation yet.");
+        }
+    }
     public Device(int id)
     {
+        PortAudio.Initialize();
+
         ID = id;
         info = PortAudio.GetDeviceInfo(id);
     }

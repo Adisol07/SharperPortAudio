@@ -8,7 +8,6 @@ internal class Program
     public static void Main(string[] args)
     {
         Console.WriteLine("Loading..");
-        SharperPortAudio.Base.PortAudio.Initialize();
         AudioRecorder recorder = new AudioRecorder(Device.DefaultInputDevice);
         recorder.Start();
         Console.WriteLine("Recoding..");
