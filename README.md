@@ -1,5 +1,5 @@
 <h1>SharperPortAudio</h1>
-<p>This library let's you record audio for all desktop operating systems.</p>
+<p>SharperPortAudio let's you record audio for all desktop operating systems.</p>
 <p>Latest version: 1.0.0</p>
 <p>NuGet: Coming Soon</p>
 <hr>
