@@ -17,8 +17,6 @@ public class AudioRecorder
 
     public DataReceivedEventHandler? DataReceived;
 
-    public AudioRecorder()
-    { }
     public AudioRecorder(Device device)
     {
         PortAudio.Initialize();

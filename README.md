@@ -1,6 +1,6 @@
 # SharperPortAudio
 SharperPortAudio let's you record audio for all desktop operating systems.\
-Latest version: 1.0.1\
+Latest version: 1.0.2\
 Wiki: https://github.com/Adisol07/SharperPortAudio/wiki \
 NuGet: https://www.nuget.org/packages/SharperPortAudio/
 ___
@@ -15,7 +15,7 @@ You can find examples in source code (DemoConsole1 and DemoConsole2)
 - DemoConsole2 contains implementation of audio recording that stops when user presses any key using AudioRecorder class.
 ___
 ## Upcoming features
- - [ ] Make PortAudio auto-initialize
+ - [x] Make PortAudio auto-initialize
  - [ ] Add bonus functions to AudioRecorder
  - [ ] Add AudioPlayer
  - [ ] Add ability to save recordings to file
