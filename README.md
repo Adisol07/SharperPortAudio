@@ -5,7 +5,8 @@ NuGet: https://www.nuget.org/packages/SharperPortAudio/
 ___
 ## About
 Code for base portaudio implementation is from [PortAudioSharp2](https://github.com/csukuangfj/PortAudioSharp2/tree/master) ([PortAudioSharp](https://github.com/BeaQueen/portaudiosharp))\
-This library contains base portaudio wrapper and most runtimes bundled in (win-64x, osx-64x, linux-64x, win-arm, osx-arm, linux-arm)
+This library contains base portaudio wrapper and most runtimes bundled in (win-64x, osx-64x, linux-64x, win-arm, osx-arm, linux-arm)\
+Also this library uses NAudio for Wave format processing in Audio class.
 ___
 ## Examples
 You can find examples in source code (DemoConsole1 and DemoConsole2)
