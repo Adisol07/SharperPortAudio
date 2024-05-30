@@ -1,6 +1,7 @@
 # SharperPortAudio
 SharperPortAudio let's you record audio for all desktop operating systems.\
 Latest version: 1.0.1\
+Wiki: https://github.com/Adisol07/SharperPortAudio/wiki \
 NuGet: https://www.nuget.org/packages/SharperPortAudio/
 ___
 ## About
