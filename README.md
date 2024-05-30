@@ -15,4 +15,7 @@ You can find examples in source code (DemoConsole1 and DemoConsole2)
 - DemoConsole2 contains implementation of audio recording that stops when user presses any key using AudioRecorder class.
 ___
 ## Upcoming features
-New features are coming very soon.
+ - [ ] Make PortAudio auto-initialize
+ - [ ] Add bonus functions to AudioRecorder
+ - [ ] Add AudioPlayer
+ - [ ] Add ability to save recordings to file
