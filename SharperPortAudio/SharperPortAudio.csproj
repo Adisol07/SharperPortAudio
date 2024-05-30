@@ -16,4 +16,21 @@
     <PackageReference Include="org.portaudio.runtime.win-arm64" Version="19.7.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/"/>
+    <None Include="../LICENSE" Pack="true" PackagePath="/"/>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PackageId>SharperPortAudio</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Adisol</Authors>
+    <RepositoryUrl>https://github.com/Adisol07/SharperPortAudio.git</RepositoryUrl> 
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Audio;Audio Recording;Wave;Wav;NAudio;PortAudio;Crossplatform</PackageTags>
+    <Description>SharperPortAudio let's you record audio for all desktop operating systems.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
 </Project>
