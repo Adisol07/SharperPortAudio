@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="org.k2fsa.portaudio.runtime.linux-x64" Version="1.0.1" />
+    <PackageReference Include="org.k2fsa.portaudio.runtime.osx-x64" Version="1.0.1" />
+    <PackageReference Include="org.k2fsa.portaudio.runtime.win-x64" Version="1.0.1" />
+    <PackageReference Include="org.portaudio.runtime.linux-arm64" Version="19.7.5" />
+    <PackageReference Include="org.portaudio.runtime.osx-arm64" Version="19.7.5" />
+    <PackageReference Include="org.portaudio.runtime.win-arm64" Version="19.7.5" />
+  </ItemGroup>
+
+</Project>

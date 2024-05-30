@@ -1,0 +1,10 @@
+*.wav
+.DS_Store
+/.DS_Store
+/SharperPortAudio.sln
+/DemoConsole1/bin
+/DemoConsole1/obj
+/DemoConsole2/bin
+/DemoConsole2/obj
+/SharperPortAudio/bin
+/SharperPortAudio/obj
