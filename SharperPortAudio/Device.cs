@@ -23,7 +23,6 @@ public class Device
     public double DefaultSampleRate => info.defaultSampleRate;
 
     public static Device DefaultInputDevice => new Device(DeviceType.DefaultInput);
-    [Obsolete("This structure is not yet implemented")]
     public static Device DefaultOutputDevice => new Device(DeviceType.DefaultOutput);
 
     public Device(DeviceType type)
@@ -34,6 +33,10 @@ public class Device
         {
             case DeviceType.DefaultInput:
                 ID = PortAudio.DefaultInputDevice;
+                info = PortAudio.GetDeviceInfo(ID);
+                break;
+            case DeviceType.DefaultOutput:
+                ID = PortAudio.DefaultOutputDevice;
                 info = PortAudio.GetDeviceInfo(ID);
                 break;
             default:
