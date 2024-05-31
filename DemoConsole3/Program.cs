@@ -11,12 +11,20 @@ internal class Program
         AudioRecorder recorder = new AudioRecorder(Device.DefaultInputDevice);
         recorder.SendBufferInsteadOfChunk = true;
         recorder.BufferEnabled = true;
+        int x = 0;
+        int y = 0;
         recorder.DataReceived += (data) =>
         {
-            Console.WriteLine("Buffer size: " + data.Samples?.Length);
+            Console.SetCursorPosition(x, y);
+            Console.Write("                                  ");
+            Console.SetCursorPosition(x, y);
+            Console.Write(data.Samples?.Length);
         };
         Console.WriteLine("Recording");
         recorder.Start();
+        Console.Write("Buffer size: ");
+        x = Console.GetCursorPosition().Left;
+        y = Console.GetCursorPosition().Top;
         Console.ReadKey();
         recorder.Stop();
         Console.WriteLine("Stopped");
