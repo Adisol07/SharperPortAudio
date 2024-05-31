@@ -14,6 +14,7 @@ public class AudioRecorder
     public int SampleRate { get; private set; }
     public uint FramesPerBuffer { get; set; } = 256;
     public bool BufferEnabled { get; set; } = true;
+    public bool SendBufferInsteadOfChunk { get; set; } = false;
 
     public DataReceivedEventHandler? DataReceived;
 
@@ -81,7 +82,11 @@ public class AudioRecorder
 
                 if (BufferEnabled) samples.AddRange(buffer);
 
-                if (DataReceived != null) DataReceived(new Audio(buffer, SampleRate, 1));
+                if (DataReceived != null)
+                {
+                    if (SendBufferInsteadOfChunk) DataReceived(new Audio(samples.ToArray(), SampleRate, 1));
+                    else DataReceived(new Audio(buffer, SampleRate, 1));
+                }
             }
             return StreamCallbackResult.Continue;
         };

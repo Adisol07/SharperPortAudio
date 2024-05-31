@@ -23,11 +23,11 @@
 
   <PropertyGroup>
     <PackageId>SharperPortAudio</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Adisol</Authors>
     <RepositoryUrl>https://github.com/Adisol07/SharperPortAudio.git</RepositoryUrl> 
     <RepositoryType>git</RepositoryType>
-    <PackageTags>Audio;Audio Recording;Wave;Wav;NAudio;PortAudio;Crossplatform</PackageTags>
+    <PackageTags>Audio;Audio Recording;Wave;Wav;NAudio;PortAudio;Crossplatform;.wav;Sharper</PackageTags>
     <Description>SharperPortAudio let's you record audio for all desktop operating systems.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
