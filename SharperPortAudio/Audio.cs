@@ -32,4 +32,9 @@ public class Audio
             return memory.ToArray();
         }
     }
+    public void WriteToFile(string fileName)
+    {
+        byte[] bytes = ToWave();
+        File.WriteAllBytes(fileName, bytes);
+    }
 }
