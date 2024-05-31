@@ -8,9 +8,10 @@ internal class Program
     public static void Main(string[] args)
     {
         Console.WriteLine("Loading..");
-        AudioRecorder recorder = new AudioRecorder(Device.DefaultInputDevice);
-        recorder.SendBufferInsteadOfChunk = true;
-        recorder.BufferEnabled = true;
+        AudioRecorder recorder = new AudioRecorder(Device.DefaultInputDevice){
+            SendBufferInsteadOfChunk = true,
+            BufferEnabled = true,
+        };
         int x = 0;
         int y = 0;
         recorder.DataReceived += (data) =>
@@ -21,10 +22,10 @@ internal class Program
             Console.Write(data.Samples?.Length);
         };
         Console.WriteLine("Recording");
-        recorder.Start();
         Console.Write("Buffer size: ");
         x = Console.GetCursorPosition().Left;
         y = Console.GetCursorPosition().Top;
+        recorder.Start();
         Console.ReadKey();
         recorder.Stop();
         Console.WriteLine("Stopped");
