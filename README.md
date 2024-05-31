@@ -19,4 +19,4 @@ ___
  - [ ] Add bonus functions to AudioRecorder
  - [ ] Add AudioPlayer
  - [x] Add ability to save recordings to file
- - [ ] Add support for .NET6.0, .NET7.0, .NET9.0
+ - [ ] Add support for .NET6.0 and .NET7.0
